@@ -1,11 +1,30 @@
+/* normalize.css минимально сбрасывает стили, делает их одинаковыми в браузерах */
+@import "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css";
 
 * {
-margin: 0;
-padding: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+html,
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
 }
 
 body {
-  
+  align-items: center;
+  height: 100vh;
+  max-width: 500px;
 }
 
 .logo {
@@ -13,3 +32,83 @@ body {
   height: 100px;
 }
 
+.container {
+  display: inline-block;
+
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  max-width: 90%;
+  text-align: center;
+}
+.links {
+  margin-top: 20px;
+}
+.link {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  padding: 10px;
+}
+
+.btn {
+  background-color: rebeccapurple;
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: 0 1px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn.whatsApp {
+  background-color: #2cb742;
+}
+
+.btn.map {
+  background-color: #4285f4;
+}
+
+.btn.call {
+  background-color: #fb8c00;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 15px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+  color: rgb(30, 29, 29);
+  background-color: #4285f4;
+}
+
+.footer {
+  margin-top: 50px;
+}
+
+.jiggle {
+  animation: jiggle 2s ease-in-out infinite;
+}
+
+@keyframes jiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-0.2deg);
+  }
+  50% {
+    transform: rotate(0.4deg);
+  }
+  75% {
+    transform: rotate(-0.2deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
