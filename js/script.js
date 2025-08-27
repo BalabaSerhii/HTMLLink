@@ -1,5 +1,13 @@
-// const whatsappButton = document.querySelector(".whatsApp ");
+const whatsappButton = document.querySelector(".whatsApp");
 
-// setTimeout(() => {
-//   whatsappButton.classList.add("jiggle");
-// });
+function triggerJiggle() {
+  whatsappButton.classList.add("jiggle");
+
+  setTimeout(() => {
+    whatsappButton.classList.remove("jiggle");
+
+    setTimeout(triggerJiggle, 800);
+  }, 1000);
+}
+
+setTimeout(triggerJiggle);

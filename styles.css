@@ -28,7 +28,7 @@ body {
 }
 
 .logo {
-  width: 100px;
+  width: 150px;
   height: 100px;
 }
 
@@ -43,24 +43,26 @@ body {
   text-align: center;
 }
 .links {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 .link {
   text-decoration: none;
   display: block;
   width: 100%;
-  padding: 10px;
+  padding: 20px;
+  height: 70px;
 }
 
 .btn {
   background-color: rebeccapurple;
   border-radius: 10px;
-  margin: 10px;
+  margin: 20px;
   box-shadow: 0 1px 20px rgba(0, 0, 0, 0.2);
 }
 
 .btn.whatsApp {
-  background-color: #2cb742;
+  background-color: rgba(37, 211, 102, 1);
+  transition: transform 0.2s ease-out;
 }
 
 .btn.map {
@@ -76,7 +78,7 @@ h1 {
 }
 
 h2 {
-  font-size: 15px;
+  font-size: 17px;
 }
 
 .icon {
@@ -92,21 +94,24 @@ h2 {
 }
 
 .jiggle {
-  animation: jiggle 2s ease-in-out infinite;
+  animation: jiggle 1s ease-in-out;
 }
 
 @keyframes jiggle {
   0% {
     transform: rotate(0deg);
   }
-  25% {
-    transform: rotate(-0.2deg);
+  20% {
+    transform: rotate(2deg);
   }
-  50% {
-    transform: rotate(0.4deg);
+  40% {
+    transform: rotate(-1deg);
   }
-  75% {
-    transform: rotate(-0.2deg);
+  60% {
+    transform: rotate(1deg);
+  }
+  80% {
+    transform: rotate(-1deg);
   }
   100% {
     transform: rotate(0deg);
