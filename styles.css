@@ -47,10 +47,13 @@ body {
 }
 .link {
   text-decoration: none;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   padding: 20px;
   height: 70px;
+ 
 }
 
 .btn {
