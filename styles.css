@@ -80,12 +80,10 @@ body {
 
 h1 {
   font-size: 20px;
- 
 }
 
 h2 {
   font-size: 17px;
-  
 }
 
 .icon {
@@ -97,30 +95,17 @@ h2 {
 }
 
 .footer {
-  /* margin-top: 50px; */
   position: relative;
   z-index: 1;
 }
 
-.cats {
-  /* position: absolute; */
-  /* bottom: 50px; */
-  /* left: 10%; */
-  /* bottom: 95%; */
-  /* transform: translateX(-50%); */
-  width: 100px;
-  /* z-index: 0; */
-  /* pointer-events: none; */
-}
-
-.dogs{
+.dogs {
   display: flex;
   justify-content: space-around;
   margin-bottom: 10px;
-
 }
 
-.dog{
+.dog {
   width: auto;
   height: 70px;
 }
